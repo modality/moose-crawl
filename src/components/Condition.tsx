@@ -11,7 +11,6 @@ const Cost = styled.span`
 const Description = styled.p`
     font-size: 0.8em;
     font-style: italic;
-    color: gray;
     margin: 0;
 `;
 

@@ -4,10 +4,20 @@ const EditableInput = styled.input`
     font-size: 2em;
     width: 80px;
     margin-right: 0.5em;
+    border: solid 1px cornflowerblue;
+    border-radius: 2px;
+    &:disabled {
+        background: aliceblue;
+    }
 `;
 
 const SolveButton = styled.button`
-    opacity: 1;
+    &:disabled {
+        background: cornflowerblue;
+        color: white;
+        border: solid 1px black;
+        border-radius: 3px;
+    }
 `;
 
 export default function CalculationTerm(props) {

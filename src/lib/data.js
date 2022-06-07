@@ -37,13 +37,13 @@ export const defaultConditions = [
     },
 	{
         id: 6,
-        name: 'Active detrimental weather (mild)',
+        name: 'Mild weather',
         description: 'Strong winds and/or precipitation, smoke in the air',
         bonus: -1,
     },
 	{
         id: 7,
-        name: 'Active detrimental weather (severe)',
+        name: 'Severe weather',
         description: 'Gale winds, snow or sand storm, thick smoke',
         bonus: -2,
     },

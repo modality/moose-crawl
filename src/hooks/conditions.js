@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { defaultConditions } from  '../lib/icewind';
+import { defaultConditions } from  '../lib/data';
 
 export default function useConditions() {
     const [conditions, setConditions] = useState([]);

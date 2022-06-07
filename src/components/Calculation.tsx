@@ -16,6 +16,7 @@ export default function Calculation(props) {
 
     return <div>
         <h2>Expedition Figures</h2>
+        <p>The calculator can solve for speed, time, and distance based on the values of the other two.</p>
         <table id="calculation-table">
             <tbody>
             {termKeys.map((key) => (

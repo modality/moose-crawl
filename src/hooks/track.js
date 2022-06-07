@@ -5,7 +5,7 @@ function clamp(num, min, max) {
 }
 
 export default function useTrack(modifier) {
-    const defaultSegments = [1, 2, 2, 3, 3, 3, 4, 4, 5];
+    const defaultSegments = [2, 2, 2, 3, 3, 3, 4, 4, 4];
     const [segments, setSegments] = useState(defaultSegments);
     const segmentValues = [0.125, 0.25, 0.5, 1, 2, 4, 8];
     const segmentText = ["\u215B", '\u00BC', '\u00BD', '1', '2', '4', '8'];
