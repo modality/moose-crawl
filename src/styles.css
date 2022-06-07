@@ -1,0 +1,34 @@
+html,
+body,
+#app {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: lightgray;
+}
+
+body,
+button,
+input {
+  font-family: Monaco, "Courier New", Courier, monospace;
+  font-size: 12px;
+}
+
+table#conditions-table {
+  border-collapse: collapse;
+}
+
+table#conditions-table tr:nth-child(even) {
+  background: lightgray;
+}
+
+table#conditions-table td {
+  vertical-align: top;
+  padding: 0.2em;
+}
+
+table#conditions-table td.modifier {
+  vertical-align: middle;
+  text-align: center;
+}
