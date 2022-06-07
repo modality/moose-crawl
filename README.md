@@ -6,4 +6,4 @@ Expedition planning tool for ICBMoose's hexcrawling rules. Software by Michael H
 
 - Installing: `yarn install`
 - Running dev server: `yarn parcel src/index.html`, then visit http://localhost:1234
-- Creating a production build: `yarn parcel build src/index.html`
+- Creating a production build: On the `deploy` branch, run `yarn parcel build src/index.html --no-optimize --dist-dir docs --public-url /moose-crawl/`

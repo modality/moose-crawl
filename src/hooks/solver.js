@@ -1,4 +1,3 @@
-import logic from 'logic_js';
 import { useState, useReducer } from 'react';
 
 export const termKeys = [
@@ -48,7 +47,7 @@ export const speedKeys = [
 
 function createEqualityConstraints(lvars, valueMap, filterFn) {
     return Object.entries(valueMap).filter(filterFn).map(([key, value]) => {
-        return logic.eq(lvars[key], value);
+        return window.logic.eq(lvars[key], value);
     });
 }
 
@@ -59,7 +58,7 @@ function solveSpeed(inputs, solveForKey) {
         mul,
         and,
         run,
-    } = logic;
+    } = window.logic;
     const lvars = {
         baseMilesPerHour: lvar('baseMilesPerHour'),
         hoursPerTravelingDay: lvar('hoursPerTravelingDay'),
@@ -102,7 +101,7 @@ function solveForInputs(inputs, solveForKey) {
         mul,
         and,
         run,
-    } = logic;
+    } = window.logic;
 
     let speedOutputs;
 
